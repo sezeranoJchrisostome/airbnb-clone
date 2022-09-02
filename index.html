@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/sm.png" type="image/x-icon">
+    <title>Vacation & Home rentals</title>
+</head>
+<body class="">
+    <div class="main-content">
+
+        <div class="pb-3 sticky  top-0 bg-white z-[1000] min-w-full">
+            <!-- ========== start: header ===== -->
+            <div class="header min-w-full  flex items-center justify-between h-20 px-5 sm:px-12 lg:px-24 border-b md:shadow">
+                <div class="logo hidden md:block">
+                    <img class="h-9 hidden lg:block"  src="./img/airbnblogo.png" alt="" >
+                    <img class="md:h-8 lg:hidden" src="./img/sm.png" alt="">
+                </div>  
+                <div class="location md:flex items-center border px-2 lg:px-4 py-2 rounded-full shadow hover:shadow-lg cursor-pointer hidden">
+                    <div class="location-inputs mx-4 border-r border-gray-400 font-medium text-gray-700 text-xs lg:text-base">
+                        <div class=" mr-2">
+                            Anywhere
+                        </div>
+                    </div>
+                    <div class="location-inputs mx-4 border-r border-gray-400 font-medium text-gray-700 text-xs lg:text-base">
+                        <div class=" mr-2">
+                            Any week
+                        </div>
+                    </div>
+                    <div class="location-inputs mx-4 border-r border-gray-400 text-sm text-gray-700">
+                        <div class="text-gray-400 mr-2">
+                            Add guests
+                        </div>
+                    </div>
+                    <div class="search-icons rounded-full bg-[#FF385C] w-9 text-center h-9 flex items-center justify-center text-white cursor-pointer">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div> 
+                <div class="location flex flex-wrap  md:hidden items-center border rounded-full shadow hover:shadow-lg cursor-pointer min-w-full h-12 my-2">
+                    <div class="search-icons w-2/12 h-full justify-center flex items-center text-gray-500 cursor-pointer">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="location__desc w-8/12 text-gray-500 ">
+                        <div class="location__desc-title text-gray-700">
+                            where to?
+                        </div>
+                        <div class="location__desc-text text-xs">
+                            Anywhere - Anyweek - Add guest
+                        </div>
+                    </div>
+                    <div class="options flex  w-2/12 justify-center">
+                        <div class="rounded-full border border-gray-400 p-2">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: rgb(34, 34, 34);"><path d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                        </div>
+                    </div>
+                </div> 
+                <div class="profile  items-center hidden md:flex ">
+                    <div class=" flex justify-between cursor-pointer h-12 px-2 lg:px-4 py-1  hover:bg-gray-200 hover:shadow rounded-full items-center">
+                        <div class="font-medium text-gray-600 text-xs lg:text-base ">
+                            <p>Become a Host</p>
+                        </div>
+                    </div>
+                    <div class="wolrd-log lg:mx-2 rounded-full cursor-pointer hover:bg-gray-200 w-9 h-9 flex items-center justify-center">
+                        <i class="fa fa-globe text-gray-600" aria-hidden="true"></i>
+                    </div>
+                    <div class="user-profile flex border justify-between px-4 py-1 shadow rounded-full items-center hover:shadow-lg cursor-pointer">
+                        <div class="mr-2">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div class="avatar relative">
+                            <div class="bg-[#FF385C] absolute border border-white w-3 h-3 rounded-full right-0" ></div>
+                            <i class="fas fa-user-circle text-3xl text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============ end: header ===== -->
+            
+            <!-- ========== start: icons ===== -->
+            <div class="px-5 sm:px-12 lg:px-24 mt-4 max-h-[75vh]">
+                <div class="icons-tabs flex items-center flex-wrap">
+                    <div class="icons-tabs flex md:w-10/12 overflow-x-auto">
+                        <!-- Icon item -->
+                        <div class="item-cards flex flex-col justify-center items-center hover:text-gray-600 cursor-pointer mr-8 border-b border-black">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 font-bold text-sm">OMG</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">Amazing</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">OMG</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">Lakefront</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <i class="fa-solid fa-snowflake text-2xl"></i>
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">OMG</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/52c8d856-33d0-445a-a040-a162374de100.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">Shared Homes</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <i class="fa-solid fa-snowflake text-2xl"></i>
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">Tiny</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/35919456-df89-4024-ad50-5fcb7a472df9.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">Capmaings</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">Artict</div>
+                        </div>
+                         <!-- Icon item-->
+                         <div class="item-cards flex flex-col justify-center items-center hover:text-gray-700 text-gray-500 cursor-pointer mr-8 hover:border-b hover:border-gray-400">
+                            <div class="icon">
+                                <img src="https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg" alt="" width="24" height="24">
+                            </div>
+                            <div class="title py-2 text-gray-600 text-sm">Cabins</div>
+                        </div>
+                    </div>
+                    <div class=" hidden md:block md:w-2/12">
+                        <div class="flex right items-center">
+                            <div class="next-icon flex items-center hover:shadow-xl  transition  hover:text-gray-700 text-gray-600 justify-center w-8 h-8 rounded-full border cursor-pointer hover:border-gray-800 border-gray-500 ">
+                                <i class="fa-solid fa-chevron-right text-sm "></i>
+                            </div>
+                            <div class="filter cursor-pointer right flex items-center justify-center py-2 px-3 border rounded-xl ml-3 ">
+                                <div class="options flex  justify-center">
+                                    <div class=" border-gray-400 p-2">
+                                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: rgb(34, 34, 34);"><path d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                                    </div>
+                                </div>
+                                <p>Filter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============ end: icons ===== -->
+        </div>
+        
+        <!-- ========== start: images cards ===== -->
+        <div class="images-cards px-5 sm:px-12 lg:px-24 mt-2 pb-9">
+            <div class="main-cards flex flex-wrap justify-center">
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/373443ec-b377-4181-b753-3a2f3508c2b3.jpg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price font-bold">
+                                $518 <span class="text-gray-400 font-semibold" class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>5.0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/fa2ed873-e726-4e6d-ab1a-28bc7c69d805.jpg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>5.0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/a391db35-de7a-4462-8be2-33f41a5fb441.jpg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>5.0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/miso/Hosting-555701192524977533/original/234db0e5-8ef3-45c4-9cf9-d2c5eb8ad0c0.jpeg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>5.0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/337660c5-939a-439b-976f-19219dbc80c7.jpg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>New
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-584469386220279136/original/227d4c26-43d5-42da-ad84-d039515c0bad.jpeg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>New
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/b07ade6e-cf5b-4c2a-9935-d1c0eb5497c6.jpg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>New
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-584469386220279136/original/227d4c26-43d5-42da-ad84-d039515c0bad.jpeg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>New
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/b07ade6e-cf5b-4c2a-9935-d1c0eb5497c6.jpg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>New
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-584469386220279136/original/227d4c26-43d5-42da-ad84-d039515c0bad.jpeg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>5.0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-584469386220279136/original/227d4c26-43d5-42da-ad84-d039515c0bad.jpeg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title font-bold ">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">                           
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>5.0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full sm:w-6/12 lg:w-3/12 my-4 px-2 relative cursor-pointer">
+                    <div class="like__heart absolute right-6 top-5">
+                        <svg class=" stroke-[#fff]" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px;  stroke-width: 2; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    </div>
+                    <img class="card-image rounded-lg h-[250px] w-full" src="https://a0.muscache.com/im/pictures/337660c5-939a-439b-976f-19219dbc80c7.jpg?im_w=720" alt="images-cards">
+                    <div class="card-description flex justify-between mt-2">
+                        <div class="">
+                            <div class="title">
+                                <h1>Solabrena, Spain</h1>
+                            </div>
+                            <div class="distance text-gray-500">
+                                5,2341 KM
+                            </div>
+                            <div class="open text-gray-500">
+                                Jan 3 - 8
+                            </div>
+                            <div class="price">
+                                $518 <span class="text-gray-400">night</span>
+                            </div>
+                        </div>
+                        <div class="rate  ">
+                            <div class="flex items-center">
+                                <span class="fa-solid fa-star"></span>5.0
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- ============= end: images cards ===== -->
+    </div>    
+    <!-- ========== Start: footer ========= -->
+    <div class="footer border-t fixed z-index[5000] bottom-0 bg-white w-full">
+        <div class=" hidden px-5 sm:px-12 lg:px-24 py-3 lg:flex justify-between">
+            <div class=" text-gray-400 text-md flex items-center">
+                <div class="mr-2">© 2022 , Inc.</div> 
+                <div class="mr-2">
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="mr-2">
+                    <a href="#">Terms</a>
+                </div>
+                <div class="mr-2">
+                    <a href="#">Sitemap</a>
+                </div>
+                <div class="mr-2">
+                    <a href="#">Destination</a>
+                </div>
+            </div>
+            <div class=" flex text-gray-800 font-semibold ">
+                <div class="lng  flex">
+                    <div class="wolrd-log mr-4">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <p class="mx-3" >English (US)</p>
+                </div>
+                <div class="curr mx-2 flex items-center justify-center">
+                    <div class="font-bold " > $ </div>
+                    <div class="mx-3" > USD </div>
+                </div>
+                <div class="ml-4 cursor-pointer">
+                    <i class="fa-solid fa-chevron-up "></i>
+                </div>
+            </div>
+        </div>
+        <div class="  flex lg:hidden justify-center items-center py-4">
+            <div class="explore mx-11 flex flex-col items-center">
+                <div class="explore__icon">
+                    <svg class=" fill-[#FF385C] stroke-[#FF385C]"  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg>
+                </div>
+                <div class="explore__descr">
+                    <div class="explore__descr-text text-xs md:text-sm">
+                        Explore
+                    </div>
+                </div>
+            </div>
+            <div class="wishlist mx-11 flex flex-col items-center">
+                <div class="wishlist__icon">
+                    <svg  class="hover:stroke-[#FF385C] hover:fill-[#FF385C] stroke-gray-600" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2.66667; overflow: visible;"><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                </div>
+                <div class="wishlist__descr">
+                    <div class="wishlist__descr-text text-xs md:text-sm">
+                        Wishlist
+                    </div>
+                </div>
+            </div>
+            <div class="login mx-11 flex flex-col items-center">
+                <div class="login__icon">
+                    <svg class="hover:stroke-[#FF385C] hover:fill-[#FF385C] stroke-gray-600" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; "><path d="m16 1c8.2842712 0 15 6.71572875 15 15 0 8.2842712-6.7157288 15-15 15-8.28427125 0-15-6.7157288-15-15 0-8.28427125 6.71572875-15 15-15zm0 8c-2.7614237 0-5 2.2385763-5 5 0 2.0143973 1.2022141 3.7998876 2.9996346 4.5835001l.0003231 2.0984999-.1499943.0278452c-2.8326474.5613112-5.31897338 2.2230336-6.93575953 4.5872979 2.34343054 2.291067 5.54974273 3.7028569 9.08579613 3.7028569 3.5355506 0 6.7414538-1.4113884 9.0850203-3.701476-1.6141801-2.3628535-4.0978119-4.0247647-6.929184-4.5867938l-.1558786-.0287302.001228-2.0991413c1.7288399-.7547474 2.9066959-2.4357565 2.9936498-4.355479l.0051645-.2283797c0-2.7614237-2.2385763-5-5-5zm0-6c-7.17970175 0-13 5.82029825-13 13 0 2.9045768.95257276 5.5866683 2.56235849 7.7509147 1.42074739-1.9134907 3.33951478-3.4002416 5.53860831-4.2955956l.3480332-.1363191-.0229565-.0189706c-1.43704227-1.2411241-2.34462949-3.045583-2.42083359-5.0285539l-.00520991-.2714755c0-3.8659932 3.1340068-7 7-7s7 3.1340068 7 7c0 1.9941317-.8415062 3.8279876-2.224566 5.1193683l-.225434.2006317.0447787.0163138c2.3268368.8792152 4.3570558 2.4138611 5.8430586 4.4127726 1.6098837-2.1632453 2.5621627-4.8449575 2.5621627-7.7490864 0-7.17970175-5.8202983-13-13-13z"></path></svg>
+                </div>
+                <div class="login__descr">
+                    <div class="login__descr-text text-xs md:text-sm">
+                        Log in
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
